@@ -57,7 +57,7 @@ export const CharacterController = () => {
       changeRotation = true;
     }
 
-    rigidbody.current.applyImpulse(impulse, true);
+    rigidbody.current?.applyImpulse(impulse, true);
 
     if (Math.abs(linvel.x) > RUN_VEL || Math.abs(linvel.z) > RUN_VEL) {
       if (characterState !== "Run") {
